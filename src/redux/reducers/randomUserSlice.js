@@ -13,6 +13,9 @@ const randomUserSlice = createSlice({
   name: "randomUser",
   initialState: initialState,
   reducers: {
+    requestNothing(state) {
+      state.isLoading = true;
+    },
     requestRandomUser(state) {
       state.isLoading = true;
     },
