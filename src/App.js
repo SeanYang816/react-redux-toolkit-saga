@@ -1,13 +1,16 @@
 import React from 'react';
 // import ScrollGenerator from './components/ScrollGenerator'
-import ClassComponent from './components/ClassComponent'
+// import ClassComponent from './components/ClassComponent'
+import TryContext from './components/TryContext'
+import ThemeContext from './ThemeContext'
 
 function App() {
   return (
-    <div>
-    {/* <ScrollGenerator /> */}
-    <ClassComponent />
-    </div>
+    <ThemeContext>
+      <TryContext />
+      {/* <ScrollGenerator /> */}
+      {/* <ClassComponent /> */}
+      </ThemeContext >
   )
 }
 
